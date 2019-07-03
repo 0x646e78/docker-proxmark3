@@ -2,10 +2,9 @@ Proxmark3 client inside docker
 ===
 
 
-Usage
----
+## Usage
 
-## Scripted
+### Scripted
 
 ```
 sudo ./build.sh
@@ -15,7 +14,7 @@ sudo ./build.sh
 sudo ./proxmark3 /dev/tyACM0
 ```
 
-## Manually
+### Manually
 
 Build image:
 
@@ -26,10 +25,9 @@ Plug in the proxmark3, and then run from a linux host:
     docker run --rm -it --device /dev/ttyACM0:/dev/ttyACM0 prox3
 
 
-USB speed
----
+## USB speed
 
-Direct from debian on teh host:
+Direct from debian on the host:
 
 ```
 #db# USB Speed:
@@ -49,7 +47,6 @@ From the container mounted on the same host:
 #db#   USB Transfer Speed PM3 -> Client = 592554 Bytes/s
 ```
 
-The installed binary
-```
+## The installed binary
 
 I compiled this on debian9, just copied it in as a bin for now.

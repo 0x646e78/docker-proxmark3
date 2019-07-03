@@ -5,6 +5,18 @@ Proxmark3 client inside docker
 Usage
 ---
 
+## Scripted
+
+```
+sudo ./build.sh
+``` 
+
+```
+sudo ./proxmark3 /dev/tyACM0
+```
+
+## Manually
+
 Build image:
 
     docker build -t prox3 .

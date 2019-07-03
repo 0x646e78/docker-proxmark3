@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+docker_tag=prox3
+
 if [[ $# -ne 1 ]]; then
   tty=/dev/ttyACM0
   echo "No valid serial port specified, defaulting to ${tty}"
@@ -7,6 +9,5 @@ else
   tty=$1
 fi
 
-
-docker run --rm -it --device $tty:/dev/ttyACM0 prox3
+docker run --rm -it --device $tty:/dev/ttyACM0 $docker_tag
 

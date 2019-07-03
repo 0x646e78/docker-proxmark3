@@ -7,7 +7,7 @@ Usage
 
 Build image:
 
-    docker build -t prox3
+    docker build -t prox3 .
 
 Plug in the proxmark3, and then run from a linux host:
 

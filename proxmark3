@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-docker_tag=prox3
+docker_tag=ectoplasm/proxmark3:latest
 
 if [[ $# -ne 1 ]]; then
   tty=/dev/ttyACM0

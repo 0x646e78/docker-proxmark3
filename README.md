@@ -6,7 +6,13 @@ Available on dockerhub as [ectoplasm/proxmark3](https://hub.docker.com/r/ectopla
 
 ## Usage
 
-### Scripted
+From a Linux host:
+
+    tty=/dev/ttyACM0 docker run --rm -it --device $tty:/dev/ttyACM0 ectoplasm/proxmark3:latest
+
+## Building and running locally
+
+### Scripts
 
 ```
 sudo ./build.sh
@@ -52,3 +58,7 @@ From the container mounted on the same host:
 ## The installed binary
 
 I compiled this on debian9, just copied it in as a bin for now.
+
+## MacOS
+
+I looked briefly at running this from a mac and it looked hard. If someone solves it it'd be awesome to hear.

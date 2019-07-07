@@ -1,18 +1,28 @@
 Proxmark3 client inside docker
 ===
 
+This image wraps the [proxmark3 client](https://github.com/Proxmark/proxmark3/tree/master/client) 
+in a docker container. 
+
+See [docker/README.md] for further information on using the container.
+
 Available on dockerhub as [ectoplasm/proxmark3](https://hub.docker.com/r/ectoplasm/proxmark3)
 
+Only works from Linux hosts, if you have a way of getting this working on other 
+host OSes it'd be great to know.
 
-## Usage
+
+## Usage - Dockerhub
 
 From a Linux host:
 
     tty=/dev/ttyACM0 docker run --rm -it --device $tty:/dev/ttyACM0 ectoplasm/proxmark3:latest
 
-## Building and running locally
 
-### Scripts
+
+## Local Build and Usage
+
+### Scripted
 
 ```
 sudo ./build.sh
@@ -22,7 +32,7 @@ sudo ./build.sh
 sudo ./proxmark3 /dev/tyACM0
 ```
 
-### Manually
+### Manual
 
 Build image:
 

@@ -28,14 +28,14 @@ docker run --rm -it --device $tty:/dev/ttyACM0 $docker_tag
 If you've specified the serial TTY correctly and the client can connect to your 
 proxmark, you will be dropped into the proxmark3 client.
 
-You should be able to use the client as per normal, nut I've only tested limited 
-functionality.
+You should be able to use the client as per normal, but I've only tested limited 
+functionality thus far.
 
 I am adding additional resources, such as default cred files, the current list being:
 
  - *mifare1k_keys.dic*
 
-These can be used such as:
+These can easily be used such as:
 
     hf mf chk ffffffffffff mifare1k_keys.dic
 
